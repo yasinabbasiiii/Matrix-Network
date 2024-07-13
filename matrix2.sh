@@ -365,7 +365,7 @@ configure_main_node(){
      #Generating ssh key
     show_progress 3 9 
 	if [[ ! -f $SSH_KEY ]]; then
-		ssh-keygen -t rsa -f /root/.ssh/id_rsa -N "" -q &> /dev/null
+		ssh-keygen -t rsa -f /root/ssh/id_rsa -N "" -q &> /dev/null
 	fi
 	
 	# Change sshd config
@@ -480,7 +480,7 @@ add_new_node(){
     fi
  
     #Transfer public key
-	sshpass -p $password ssh-copy-id -i ~/.ssh/id_rsa.pub $username@$host_ip >/dev/null 2>&1 
+	sshpass -p $password ssh-copy-id -i ~/ssh/id_rsa.pub $username@$host_ip >/dev/null 2>&1 
   	colorize green "	The public key added to remote node successfully" bold
   	sleep 2
 
