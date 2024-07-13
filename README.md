@@ -11,6 +11,14 @@
 bash <(curl -Ls https://raw.githubusercontent.com/yasinabbasiiii/matrix-network/main/matrix.sh)
 
 ```
+```
+bash <(curl -Ls https://raw.githubusercontent.com/yasinabbasiiii/matrix-network/main/matrix2.sh)
+
+```
+```
+bash <(curl -Ls https://raw.githubusercontent.com/yasinabbasiiii/matrix-network/main/matrix3.sh)
+
+```
 
 # آموزش در یوتیوب
 
