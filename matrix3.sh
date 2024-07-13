@@ -437,12 +437,7 @@ add_new_node(){
     read -p "Enter the password for the user $username: " -s password
     echo
 
-    # Validate IP address format (basic check)
-    if [[ ! $host_ip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-        echo "Invalid IP address format. Exiting."
-        exit 1
-    fi
-
+   
     # Generate SSH keys if not already available
     if [[ ! -f $SSH_KEY ]]; then
         ssh-keygen -t rsa -b 4096 -f $SSH_KEY -N ""
