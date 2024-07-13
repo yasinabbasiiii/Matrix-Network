@@ -20,7 +20,7 @@ EOF
 CONFIG_DIRECTORY='/etc/tinc/matrix'
 CONFIG_PATH='/etc/tinc/matrix/tinc.conf'
 HOST_DIRECTORY='/etc/tinc/matrix/hosts'
-SSH_KEY='/root/.ssh/id_rsa'
+SSH_KEY='/root/ssh/id_rsa'
 
 # just press key to continue
 press_key(){
