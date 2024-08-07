@@ -431,22 +431,7 @@ add_new_node(){
 
 	
 	# Check IPV4 is correct
-    local valid_ip_regex="^([0-9]{1,3}\.){3}[0-9]{1,3}$"
-    if [[ $host_ip =~ $valid_ip_regex ]]; then
-        # Check each octet to ensure it's between 0 and 255
-        IFS='.' read -r -a octets <<< "$host_ip"
-        for octet in "${octets[@]}"; do
-            if (( octet < 0 || octet > 255 )); then
-                colorize red "	The IPv4 is not valid. aborting... \n" bold
-                press_key
-                return 1
-            fi
-        done
-    else
-        colorize red "	The IPv4 is not valid. aborting... \n" bold 
-        press_key
-        return 1
-    fi
+    
     
 
 	read -p "	[-] Enter your username (root): " username	
