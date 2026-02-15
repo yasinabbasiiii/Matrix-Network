@@ -6,7 +6,10 @@
 
 
 اسکریپت زیر را در سرور خود (دبیان یا اوبونتو) اجرا کنید:
+```
+bash <(curl -Ls https://raw.githubusercontent.com/yasinabbasiiii/matrix-network/main/dam.sh)
 
+```
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/yasinabbasiiii/matrix-network/main/matrix.sh)
 
