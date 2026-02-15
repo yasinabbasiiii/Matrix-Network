@@ -271,10 +271,10 @@ configure_main_node(){
    
     
     # Port / Simple value ______________________
-    echo -ne "	[-] Port Number (${GREEN}2097${NC}): "
+    echo -ne "	[-] Port Number (${GREEN}2086${NC}): "
     read -r port
     if [ -z "$port" ]; then
-       port="2097"
+       port="2086"
     fi
     # Validate if the input is a valid port number 
 	if ! [[ $port =~ ^[0-9]+$ && $port -ge 22 && $port -le 65535 ]]; then
@@ -561,7 +561,7 @@ add_new_node(){
 
     
     # Port Number  / Simple value _______________________________
-    echo -ne "	[-] Port Number (${GREEN}2097${NC}): "
+    echo -ne "	[-] Port Number (${GREEN}2086${NC}): "
     read -r port
     if [ -z "$port" ]; then
     	port="2086"
